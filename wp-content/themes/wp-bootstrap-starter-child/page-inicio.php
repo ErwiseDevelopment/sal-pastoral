@@ -330,7 +330,7 @@ get_header(); ?>
 
                             <a 
                             class="l-news__btn-new w-100 u-line-height-100 u-border-2 u-border-color-secondary d-block u-font-weight-bold text-center text-uppercase text-decoration-none u-color-folk-theme hover:u-color-folk-white u-bg-folk-none hover:u-bg-folk-theme p-3 aos-init" 
-                            href="https://portal.erwise.com.br/category/portal-pastoral-juvenil/" 
+                            href="<?php echo $link_pattern . 'category/portal-pastoral-juvenil'?>" 
                             data-aos="zoom-in">
                                 + Notícias
                             </a>

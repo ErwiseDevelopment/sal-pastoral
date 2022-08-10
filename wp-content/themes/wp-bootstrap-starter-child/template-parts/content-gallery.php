@@ -54,89 +54,6 @@
                             ?>
                             <!-- end loop -->
 
-                            <!-- <div class="col-md-6 my-3">
-                                
-                                <a 
-                                class="l-gallery__album d-block"
-                                href="#">
-                                    <img
-                                    class="img-fluid w-100"
-                                    src="http://pastoral.test/wp-content/uploads/2022/02/galeria-foto-1.png"
-                                    alt="">
-                                </a>
-                            </div>
-
-                            <div class="col-md-6 my-3">
-                                
-                                <a 
-                                class="l-gallery__album d-block"
-                                href="#">
-                                    <img
-                                    class="img-fluid w-100"
-                                    src="http://pastoral.test/wp-content/uploads/2022/02/galeria-foto-1.png"
-                                    alt="">
-                                </a>
-                            </div>
-
-                            <div class="col-md-6 my-3">
-                                
-                                <a 
-                                class="l-gallery__album d-block"
-                                href="#">
-                                    <img
-                                    class="img-fluid w-100"
-                                    src="http://pastoral.test/wp-content/uploads/2022/02/galeria-foto-1.png"
-                                    alt="">
-                                </a>
-                            </div>
-
-                            <div class="col-md-6 my-3">
-                                
-                                <a 
-                                class="l-gallery__album d-block"
-                                href="#">
-                                    <img
-                                    class="img-fluid w-100"
-                                    src="http://pastoral.test/wp-content/uploads/2022/02/galeria-foto-1.png"
-                                    alt="">
-                                </a>
-                            </div>
-
-                            <div class="col-md-6 my-3">
-                                
-                                <a 
-                                class="l-gallery__album d-block"
-                                href="#">
-                                    <img
-                                    class="img-fluid w-100"
-                                    src="http://pastoral.test/wp-content/uploads/2022/02/galeria-foto-1.png"
-                                    alt="">
-                                </a>
-                            </div>
-
-                            <div class="col-md-6 my-3">
-                                
-                                <a 
-                                class="l-gallery__album d-block"
-                                href="#">
-                                    <img
-                                    class="img-fluid w-100"
-                                    src="http://pastoral.test/wp-content/uploads/2022/02/galeria-foto-1.png"
-                                    alt="">
-                                </a>
-                            </div>
-
-                            <div class="col-md-6 my-3">
-                                
-                                <a 
-                                class="l-gallery__album d-block"
-                                href="#">
-                                    <img
-                                    class="img-fluid w-100"
-                                    src="http://pastoral.test/wp-content/uploads/2022/02/galeria-foto-1.png"
-                                    alt="">
-                                </a>
-                            </div> -->
                         </div>
 
                         <div class="row justify-content-center">
@@ -155,52 +72,25 @@
                     <div class="col-lg-3 mt-3 mt-lg-0">
 
                         <div class="row">
-
+                                <?php if(have_rows('videos')) :
+                                    while(have_rows('videos')) : the_row();
+                                    ?>
                             <!-- loop -->
                             <div class="col-md-6 col-lg-12 my-3">
 
                                 <div class="d-flex justify-content-center justify-content-lg-start">
-                                    <iframe class="w-100" src="https://www.youtube.com/embed/nnr7kAkrSJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                     <?php the_sub_field('video_repetidor'); ?>
                                 </div>
 
                                 <p class="l-gallery__video-title u-font-weight-bold text-center u-color-folk-white">
-                                    Terço Luminoso reúne famílias
+                                    <?php echo get_sub_field('titulo')?>
                                 </p>
                             </div>
+                            <?php endwhile; 
+                                    endif;
+                                ?>
                             <!-- end loop -->
-
-                            <div class="col-md-6 col-lg-12 my-3">
-
-                                <div class="d-flex justify-content-center justify-content-lg-start">
-                                    <iframe class="w-100" src="https://www.youtube.com/embed/nnr7kAkrSJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-
-                                <p class="l-gallery__video-title u-font-weight-bold text-center u-color-folk-white">
-                                    Terço Luminoso reúne famílias
-                                </p>
-                            </div>
-
-                            <div class="col-md-6 col-lg-12 my-3">
-
-                                <div class="d-flex justify-content-center justify-content-lg-start">
-                                    <iframe class="w-100" src="https://www.youtube.com/embed/nnr7kAkrSJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-
-                                <p class="l-gallery__video-title u-font-weight-bold text-center u-color-folk-white">
-                                    Terço Luminoso reúne famílias
-                                </p>
-                            </div>
-
-                            <div class="col-md-6 col-lg-12 my-3">
-
-                                <div class="d-flex justify-content-center justify-content-lg-start">
-                                    <iframe class="w-100" src="https://www.youtube.com/embed/nnr7kAkrSJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-
-                                <p class="l-gallery__video-title u-font-weight-bold text-center u-color-folk-white">
-                                    Terço Luminoso reúne famílias
-                                </p>
-                            </div>
+                         
                         </div>
 
                         <div class="row justify-content-center">
@@ -209,7 +99,7 @@
 
                                 <a 
                                 class="l-news__small__card-read-more u-line-height-100 hover:u-opacity-8 d-block u-font-weight-bold text-center text-decoration-none u-color-folk-white u-bg-folk-primary py-2 px-5" 
-                                href="#">
+                                href="<?php echo get_field('mais_videos')?>" target="_blank">
                                     Mais vídeos
                                 </a>
                             </div>
