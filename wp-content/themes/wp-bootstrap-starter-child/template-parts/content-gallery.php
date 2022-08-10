@@ -12,7 +12,7 @@
 
                     <div class="col-lg-10 offset-md-1 d-flex flex-column flex-md-row align-items-center mb-3">
                         <h3 class="c-title u-font-weight-bold text-uppercase u-color-folk-white u-bg-folk-primary py-3 px-5">
-                            <span class="u-font-weight-medium u-color-folk-white mr-2">//</span> acontecendo na ASJ
+                            <span class="u-font-weight-medium u-color-folk-white mr-2">//</span> acontecendo na AJS
                         </h3>
                     </div>
                 </div>

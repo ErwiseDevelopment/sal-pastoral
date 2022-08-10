@@ -385,7 +385,7 @@ get_header(); ?>
                     <div class="col-lg-6">
                             
                         <h3 class="l-digital__title-primary d-inline-flex u-font-weight-bold text-uppercase u-color-folk-white u-bg-folk-primary py-3 px-5">
-                            <span class="u-font-weight-medium u-color-folk-white mr-2">//</span> aprofunde-se
+                            <span class="u-font-weight-medium u-color-folk-white mr-2">//</span> Saiba mais
                         </h3>
 
                         <div class="row">
