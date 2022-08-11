@@ -531,7 +531,7 @@ get_header(); ?>
                                                             </p>
 
                                                             <a
-                                                            class="l-digital__inspector__link u-font-weight-extrabold u-color-folk-green"
+                                                            class="l-news__small__card-read-more u-line-height-100 hover:u-opacity-8 u-font-weight-bold text-center text-decoration-none u-color-folk-white u-bg-folk-theme py-2 px-5"
                                                             href="<?php echo esc_url( $rest_post->link ); ?>">
                                                                 Ler mais >
                                                             </a>
